@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color-1: #718093;
+    --secondary-color-2: #7F8FA6;
+    --text-color: #4B4B4B;
+    --link-color: #0097E6;
+    --hover-color: #ECF0F1;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cta-button {
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+    background-color: var(--secondary-color-1);
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 0.5rem var(--secondary-color-2) solid;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: var(--secondary-color-2);
+        border-color: var(--secondary-color-1);
+    }
+}
+
+.cta-link {
+    display: block;
+    color: var(--link-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &:hover {
+        color: darken($color: (#0097E6), $amount: 5)
+    }
+}
